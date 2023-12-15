@@ -10,7 +10,7 @@ const Imagination = () => {
                 </div>
                 <div className="homecontent2 mtop">
                     <h1 className="hometitle">Unleash your imagination with Mind.</h1>
-                    <p className="homedescription">Mind represents the evolution of programming languages. It's a revolutionary tool designed to bridge the gap between human creativity and AI innovation. With a graph-based structure, Mind enables program creation and modification trough natural language and a drag-and-drop editor.</p>
+                    <p className="homedescription">Heart AI represents the evolution of programming languages. It's a revolutionary tool designed to bridge the gap between human creativity and AI innovation. With a graph-based structure, Mind enables program creation and modification trough natural language and a drag-and-drop editor.</p>
                 </div>
             </div>
         </div>
