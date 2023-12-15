@@ -1360,7 +1360,7 @@ ul li a{
   }
 
   .mobile-menu-link {
-    background-color: rgba(128, 128, 128, 0.729);
+    background-color: rgb(128, 128, 128);
     height: 20rem;
     display: grid;
     grid-column: 2/5;

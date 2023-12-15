@@ -354,15 +354,15 @@ const Roadmap = () => {
                   edges={roadmapEdges}
                   nodeTypes={nodeTypes}
                   style={{ height: "2200px", width: "100%" }}
+                  panOnDrag={false}
+                  zoomOnScroll={false}
+                  zoomOnDoubleClick={false}
+                  paneMoveable={false}
                   elementsSelectable={false}
                   nodesDraggable={false}
                   nodesConnectable={false}
                   fitView={false}
-                  zoomOnScroll={false}
-                  zoomOnDoubleClick={false}
-                  paneMoveable={false}
                   preventScrolling={false}
-                  defaultZoom={1.2} // Set the default position
                 />
               </div>
               <div style={{ marginTop: "20px" }}>
@@ -403,15 +403,15 @@ const Roadmap = () => {
                     height: "1500px",
                     minWidth: "300px",
                   }}
+                  panOnDrag={false}
+                  zoomOnScroll={false}
+                  zoomOnDoubleClick={false}
+                  paneMoveable={false}
                   elementsSelectable={false}
                   nodesDraggable={false}
                   nodesConnectable={false}
                   fitView={false}
-                  zoomOnScroll={false}
-                  zoomOnDoubleClick={false}
-                  paneMoveable={false}
-                  preventScrolling={false}
-                  defaultZoom={1.2} // Set the default position
+                  preventScrolling={false} // Set the default position
                 />
               </div>
               <div>
@@ -429,7 +429,7 @@ const Roadmap = () => {
       </div>
     </div>
   );
-  
+
 };
 
 export default Roadmap;
