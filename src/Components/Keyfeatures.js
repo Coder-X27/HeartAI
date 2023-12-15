@@ -172,22 +172,24 @@ const featuresNodesVertical = [
 
 const Keyfeatures = () => {
   const isMobile = window.innerWidth < 700;
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: isMobile ? '100%' : isMobile ? '600px' : '400px', // Adjust as needed
+    padding: isMobile ? '20px' : '40px 20px', // Adjust padding for smaller screens
+  };
   return (
     <div style={{ maxWidth: '100%' }}>
       <div className="keyfeatures">
         <h1>Key Features</h1>
       </div>
-      <div
-        style={{
-          height: isMobile ? '600px' : '400px',
-          padding: '0px 20px',
-        }}
-      >
+      <div style={containerStyle}>
         <ReactFlow
           nodes={isMobile ? featuresNodesVertical : featuresNodesHorizontal}
           edges={featuresEdges}
           nodeTypes={nodeTypes}
-          style={{ height: '100%' }}
+          style={{ width: '100%', height: '100%' }}
           panOnDrag={false} 
           zoomOnScroll={false} 
           zoomOnDoubleClick={false}

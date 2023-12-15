@@ -44,6 +44,12 @@
   color: rgba(255, 255, 255, 0.784);
   font-size: 1.2rem;
 }
+.navbtn.close {
+  background-color: #ff0000; /* Change the color as needed */
+  color: #ffffff;
+}
+
+
 
 /* ________________HOME SECTION___________________ */
 .homecontent {
