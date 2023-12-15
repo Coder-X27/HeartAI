@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 1000000000;
 }
 .navlogo {
   width: 20%;
@@ -138,12 +139,12 @@
   width: 100%;
   height: 500px;
 }
-.poweredtitle{
+.poweredtitle {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 300;
 }
-.poweredimages{
+.poweredimages {
   width: 70%;
   display: flex;
   justify-content: center;
@@ -151,15 +152,15 @@
   margin: auto;
   margin-top: 5rem;
 }
-.pimg{
+.pimg {
   width: 17%;
   margin: auto;
 }
-.pimgtext{
+.pimgtext {
   font-size: 2rem;
   text-align: center;
 }
-.lineimg{
+.lineimg {
   width: 100%;
   margin-top: 3rem;
 }
@@ -172,12 +173,11 @@
   color: #fff;
   background-color: transparent;
   margin-right: 2rem;
-  border: .5px solid grey;
+  border: 0.5px solid rgba(128, 128, 128, 0.368);
   margin-top: 3rem;
   margin-right: 50rem;
-  
 }
-.keyfeatures> h1{
+.keyfeatures > h1 {
   font-size: 3rem;
   font-weight: 300;
 }
@@ -208,12 +208,11 @@
   color: #fff;
   background-color: transparent;
   margin-right: 2rem;
-  border: .5px solid rgba(128, 128, 128, 0.573);
+  border: 0.5px solid rgba(128, 128, 128, 0.245);
   margin-top: 3rem;
   margin-bottom: 4rem;
-  
 }
-.howitworks> h1{
+.howitworks > h1 {
   font-size: 3rem;
   font-weight: 300;
 }
@@ -236,11 +235,11 @@
   right: -3px;
   top: -4px;
 }
-.wid{
+.wid {
   width: 70%;
   margin: auto;
 }
-.howitworkscontainer{
+.howitworkscontainer {
   width: 85%;
   margin: auto;
   display: flex;
@@ -248,42 +247,487 @@
   justify-content: center;
   align-items: center;
 }
-.hiwcontent{
+.hiwcontent {
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.71);
 }
-.hiwframe{
+.hiwframe {
   width: 80%;
   height: 500px;
   margin-top: 10rem;
 }
-.steps{
+.steps {
   width: 85%;
   min-height: 115vh;
-  background: url(http://localhost:3000/static/media/circuit.15d4e63049b9cc83b098.png)no-repeat center center/cover;
+  background: url(./Assets//circuit.png) no-repeat center center/cover;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   margin-top: 10rem;
 }
-.step1{
+.step1 {
   margin-top: 0;
 }
-.step2{
+.step2 {
   margin-left: 50rem;
   margin-top: 5rem;
 }
-.step3{
+.step3 {
   margin-top: 8rem;
 }
-.stepstitle{
+.stepstitle {
   margin-top: 2rem;
   font-size: 3rem;
   font-weight: 300;
 }
-.stepsdesc{
+.stepsdesc {
   font-size: 1.5rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.671);
+}
+.minitradecontainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.minitrade {
+  width: auto;
+  position: relative;
+  text-align: center;
+  padding: 3rem 4rem;
+  color: #fff;
+  background-color: transparent;
+  margin-left: 5rem;
+  border: 0.5px solid rgba(128, 128, 128, 0.374);
+  margin-top: 10rem;
+}
+.minitrade > h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.minitrade:before,
+.minitrade:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 666px;
+  width: 5px;
+  height: 5px;
+  box-shadow: 0 160px 0 0 #fff;
+}
+.minitrade:before {
+  left: -3px;
+  top: -4px;
+}
+.minitrade:after {
+  right: -3px;
+  top: -4px;
+}
+.minitradedesc {
+  width: 45%;
+  margin-left: 5rem;
+  margin-top: 3rem;
+}
+.minitradedesc > p {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.752);
+  font-weight: 200;
+  margin-bottom: 5rem;
+}
+.promptcontainer {
+  width: 85%;
+  min-height: 400px;
+  margin: auto;
+  border: 1px solid grey;
+  border-radius: 10px;
+  background: rgb(105, 105, 105);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 105, 105, 1) 1%,
+    rgba(0, 0, 0, 1) 14%
+  );
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 5rem;
+}
+.promptcontainer > h1 {
+  font-size: 2.4rem;
+  font-weight: 300;
+}
+.promptbox {
+  width: 100%;
+  border: 1px solid white;
+  padding: 1rem;
+  font-size: 1rem;
+  margin: 1.5rem 0;
+  background-color: #212121;
+}
+.promptbox > p {
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.795);
+}
+.bold {
+  width: 60%;
+  margin-left: 0rem;
+  margin-top: 0rem;
+}
+.bold > h1 {
+  font-weight: 500;
+}
+.heartaicontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 85%;
+  margin: auto;
+}
+.heartsections {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: auto;
+}
+.heartleftsection {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 55%;
+}
+.heartdesc {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.707);
+  font-weight: 200;
+  margin-top: 3rem;
+}
+.heartdesc2 {
+  margin-top: 5rem;
+  font-size: 2.6rem;
+  color: white;
+}
+.heartrightsection {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.heartrightsection > img {
+  width: 100%;
+}
+.heartcontent {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10rem;
+}
+.heartbox {
+  width: 30%;
+  margin: 0 auto;
+}
+.heartboxheading {
+  font-size: 2.3rem;
+  font-weight: 300;
+  height: 100px;
+}
+.heartboxdescription {
+  font-size: 1.1rem;
+  margin-top: 2rem;
+
+  margin-bottom: 5rem;
+  color: rgba(255, 255, 255, 0.737);
+}
+.faq {
+  min-height: 100vh;
+  width: 100vw;
+  background: rgb(105, 105, 105);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 105, 105, 0.8279644621520483) 1%,
+    rgba(0, 0, 0, 1) 50%
+  );
+}
+.faqcontainer {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.faqheading {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  font-weight: 300;
+  font-size: 3rem;
+}
+.accordion {
+  width: 100%;
+}
+.accordionheading {
+  background: rgb(105, 105, 105);
+  background: linear-gradient(
+    90deg,
+    rgba(105, 105, 105, 0.5142389719559699) 0%,
+    rgba(0, 0, 0, 1) 99%
+  );
+  padding: 1rem;
+}
+.accordiondescription {
+  padding: 1rem;
+  background: rgb(105, 105, 105);
+  background: linear-gradient(
+    180deg,
+    rgba(105, 105, 105, 0.5142389719559699) 0%,
+    rgba(0, 0, 0, 0.7299252464657738) 99%
+  );
+  /* border: 1px solid white !important; */
+  border-top: 0px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white;
+}
+.m {
+  margin: 1rem 0;
+}
+.footer {
+  width: 100%;
+  margin-top: 10rem;
+}
+.footersection {
+  width: 90%;
+  height: 50vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fsec1 {
+  width: 20%;
+}
+.fsec3 {
+  width: 20%;
+  transform: rotate(90deg);
+}
+.fsec2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+.footerbox {
+  width: 30%;
+}
+.fboxhead {
+  height: 70px;
+  color: rgba(255, 255, 255, 0.753);
+}
+.fboxlinks {
+  display: flex;
+  flex-direction: column;
+}
+.fboxlink {
+  margin: 0.5rem;
+}
+.copyright {
+  text-align: center;
+  font-weight: 200;
+}
+.show{
+  display: none;
+}
+.imagintaionsection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 10rem;
+}
+@media only screen and (max-width: 800px) {
+  .navbar {
+    width: 100%;
+  }
+  .homecontent{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .hometitle{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .homebtns{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .homebtn{
+    width: 90%;
+    margin: 1rem;
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+  .homeimg{
+    width: 100%
+  }
+  .imagintaionsection{
+    flex-direction: column-reverse;
+  }
+  .homecontent2{
+    width: 90%;
+  }
+  .hometitle{
+    font-size: 1.8rem;
+  }
+  .homedescription{
+    font-size: 1.3rem;
+  }
+  .homeimg2{
+    width: 100%;
+  }
+  .navlinks,
+  .navbtn {
+    display: none;
+  }
+  .poweredimages{
+    flex-direction: column;
+
+  }
+  .pimg{
+    width: 80%;
+    margin: 2rem;
+  }
+  .steps{
+    background:none
+  }
+  .step1{
+    width: 100%;
+  }
+  .step2{
+    margin-left: 0;
+  }
+  .hiwframe{
+    width: 100%;
+    height: 50%;
+    margin: 1rem 0;
+  }
+  .howitworkscontainer{
+    width: 95%;
+    margin: auto;
+  }
+  .howitworks{
+    width: 90%;
+  }
+  .howitworks>h1{
+    text-align: center;
+  }
+  .hiwframe
+  .minitradecontainer {
+    align-items: center;
+    justify-content: center;
+  }
+  .minitrade{
+    width: auto;
+  position: relative;
+  padding: 2rem 3rem;
+  color: #fff;
+  background-color: transparent;
+  margin-left: 5rem;
+  border: 0.5px solid rgba(128, 128, 128, 0.374);
+  margin-top: 10rem;
+  }
+  .promptcontainer {
+    padding: 1.5rem;
+  }
+  .promptcontainer > h1 {
+    font-size: 2rem;
+  }
+  .heartaicontainer {
+    width: 90%;
+    margin: auto;
+  }
+  .promptbox {
+    border-radius: 20px;
+  }
+  .heartsections {
+    width: 100%;
+  }
+  .heartleftsection {
+    width: 100%;
+  }
+  .heartdesc {
+    text-align: justify;
+  }
+  .heartdesc2 {
+    text-align: center;
+  }
+  .heartrightsection {
+    width: 100%;
+    
+  }
+  .heartcontent {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+  .heartbox {
+    width: 100%;
+    margin: 2rem 0;
+  }
+  .heartboxheading {
+    font-size: 2rem;
+    height: 50px;
+  }
+  .bold {
+    width: 50%;
+  }
+
+  .heartsections {
+    flex-direction: column;
+  }
+
+  .faqheading {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .footersection {
+    flex-direction: column;
+  }
+  .fsec1 {
+    width: 70%;
+    margin-bottom: 4rem;
+  }
+  .fsec3 {
+    display: none;
+  }
+  .fsec2 {
+    width: 100%;
+  }
+  .fboxhead {
+    font-size: 1.2rem;
+    height: 30px;
+    text-align: center;
+  }
+  .fboxlink {
+    font-size: 1rem;
+    text-align: center;
+  }
 }

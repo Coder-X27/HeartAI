@@ -14,13 +14,14 @@
     --black: #020401;
     --white: #fff;
     --fonts: "Sora", sans-serif;
-    --containerH: 100vh;
+    --containerH: 80vh;
     --containerW: 100vw;
   }
   body {
     font-family: var(--fonts);
     background-color: var(--black);
     color: var(--white);
+    overflow-x: hidden;
   }
   .container {
     width: var(--containerW);
