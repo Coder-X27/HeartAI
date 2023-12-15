@@ -93,7 +93,7 @@ const initialEdges = [
 const initialNodesVertical = [
   {
     id: "1",
-    position: { x: 11, y: 0 },
+    position: { x: 0, y: 0 },
     data: {
       label: "Machine Bytecode",
       examples: "0001011010100100",
@@ -103,7 +103,7 @@ const initialNodesVertical = [
   },
   {
     id: "2",
-    position: { x: 0, y: 200 },
+    position: { x: 0, y: 150 },
     data: {
       label: "Assembly",
       examples: "x86 ARM MIPS 6502 Z80",
@@ -113,7 +113,7 @@ const initialNodesVertical = [
   },
   {
     id: "3",
-    position: { x: 0, y: 400 },
+    position: { x: 0, y: 300 },
     data: {
       label: "High Level Programming Languages",
       examples: "C/C++ Python Javascript",
@@ -123,7 +123,7 @@ const initialNodesVertical = [
   },
   {
     id: "4",
-    position: { x: 0, y: 650 },
+    position: { x: 0, y: 450 },
     data: {
       label: "Meta programming Language",
       examples: "Heart",
@@ -136,7 +136,7 @@ const initialNodesVertical = [
 const Evolution = () => {
     const isMobile = window.innerWidth < 700;
   return (
-    <div style={{ maxWidth: '100%', margin: '0 auto' }}>
+    <div style={{ maxWidth: '100%', margin: '0 auto' }} className='container2'>
       <div style={{ marginTop: 20, textAlign: 'center' }}>
         <h1>The Evolution of Programming Languages</h1>
       </div>
@@ -145,6 +145,7 @@ const Evolution = () => {
           height: isMobile ? '600px' : '400px',
           padding: '0px 20px',
         }}
+        className='evolutionchart'
       >
         <ReactFlow
           nodes={isMobile ? initialNodesVertical : initialNodesHorizontal}
