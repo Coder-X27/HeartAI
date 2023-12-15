@@ -554,6 +554,9 @@
   margin-bottom: 10rem;
 }
 @media only screen and (max-width: 800px) {
+  body{
+    overflow-x: hidden;
+  }
   .navbar {
     width: 100%;
   }
@@ -595,8 +598,19 @@
   .hometitle{
     font-size: 1.8rem;
   }
+  .howitworks{
+    margin-right: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
   .homedescription{
     font-size: 1.3rem;
+  }
+  .homeimg{
+    margin-top: 0;
+  }
+  .mtop{
+    margin-top: 1rem;
   }
   .homeimg2{
     width: 100%;
@@ -621,11 +635,22 @@
   }
   .step2{
     margin-left: 0;
+    margin-top: 1rem;
+  }
+  .step3{
+    margin-top: 1rem;
   }
   .hiwframe{
     width: 100%;
     height: 50%;
     margin: 1rem 0;
+  }
+  .stepstitle{
+    margin-top: 0rem;
+  font-size: 2rem;
+  }
+  .stepsdesc{
+    font-size: 1.5rem;
   }
   .howitworkscontainer{
     width: 95%;
@@ -648,9 +673,14 @@
   padding: 2rem 3rem;
   color: #fff;
   background-color: transparent;
-  margin-left: 5rem;
+  margin-left: 1rem;
   border: 0.5px solid rgba(128, 128, 128, 0.374);
-  margin-top: 10rem;
+  margin-top: 5rem;
+  }
+  .minitradedesc{
+    width: 90%;
+    margin-top: 1rem;
+    margin-left: 1rem;
   }
   .promptcontainer {
     padding: 1.5rem;
