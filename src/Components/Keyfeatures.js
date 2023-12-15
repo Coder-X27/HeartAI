@@ -11,13 +11,13 @@ const nodeTypes = {
 const featuresNodesHorizontal = [
   {
     id: "1",
-    position: { x: 0, y: 0 },
+    position: { x: 400, y: 0 },
     data: { label: "Agnostic Graph-Based Language" },
     type: "feature",
   },
   {
     id: "2",
-    position: { x: 600, y: 0 },
+    position: { x: 1000, y: 0 },
     data: {
       label:
         "Heart breaks barriers, serving both AI and human creators with a language that adapts to diverse application.",
@@ -26,13 +26,13 @@ const featuresNodesHorizontal = [
   },
   {
     id: "3",
-    position: { x: 0, y: 100 },
+    position: { x: 400, y: 100 },
     data: { label: "Imagination-Driven Programming", flag: true },
     type: "feature",
   },
   {
     id: "4",
-    position: { x: 600, y: 100 },
+    position: { x: 1000, y: 100 },
     data: {
       label:
         "Users only need to imagine their goals; Mind interprets and executes the rest.",
@@ -41,7 +41,7 @@ const featuresNodesHorizontal = [
   },
   {
     id: "5",
-    position: { x: 0, y: 200 },
+    position: { x: 400, y: 200 },
     data: {
       label: "Intuitive Drag and Drop Editor",
     },
@@ -49,7 +49,7 @@ const featuresNodesHorizontal = [
   },
   {
     id: "6",
-    position: { x: 600, y: 200 },
+    position: { x: 1000, y: 200 },
     data: {
       label:
         "Craft and modify algorithms visually for enhanced clarity and ease of use.",
@@ -178,9 +178,10 @@ const Keyfeatures = () => {
     alignItems: 'center',
     height: isMobile ? '100%' : isMobile ? '600px' : '400px', // Adjust as needed
     padding: isMobile ? '20px' : '40px 20px', // Adjust padding for smaller screens
+    width:isMobile?'100%':'100%'
   };
   return (
-    <div style={{ maxWidth: '100%' }}>
+    <div className="container1">
       <div className="keyfeatures">
         <h1>Key Features</h1>
       </div>
