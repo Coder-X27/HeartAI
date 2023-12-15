@@ -20,7 +20,7 @@ const featuresNodesHorizontal = [
     position: { x: 600, y: 0 },
     data: {
       label:
-        "Mind breaks barriers, serving both AI and human creators with a language that adapts to diverse application.",
+        "Heart breaks barriers, serving both AI and human creators with a language that adapts to diverse application.",
     },
     type: "featuredescription",
   },
@@ -124,7 +124,7 @@ const featuresNodesVertical = [
     position: { x: 0, y: 140 },
     data: {
       label:
-        "Mind breaks barriers, serving both AI and human creators with a language that adapts to diverse application.",
+        "Heart breaks barriers, serving both AI and human creators with a language that adapts to diverse application.",
       vertical: true,
     },
     type: "featuredescription",
