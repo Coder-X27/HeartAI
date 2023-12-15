@@ -1,5 +1,5 @@
 import React from "react";
-import { Handle } from "reactflow";
+import { Handle } from "react-flow-renderer";
 
 const MidNode = ({ id, data }) => {
   return (

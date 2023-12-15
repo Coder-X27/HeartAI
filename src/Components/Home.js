@@ -17,7 +17,6 @@ const Home = () => {
         <>
             <Hero/>
             <Imagination/>
-            {/* #KHUSHIIIIIIIIIIIIIIIIIIIIII  */}
             <Evolution/>
             <Powered/>
             {/* #KHUSHIIIIIIIIIIIIIIIIIIIIII  */}
