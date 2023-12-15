@@ -339,6 +339,74 @@
   font-weight: 200;
   margin-bottom: 5rem;
 }
+
+.roadmap {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  background-color: transparent;
+  margin-right: 2rem;
+  border: 0.5px solid rgba(128, 128, 128, 0.245);
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.roadmap > h1 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+.roadmap:before,
+.roadmap:after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 666px;
+  width: 5px;
+  height: 5px;
+  box-shadow: 0 110px 0 0 #fff;
+}
+.roadmap:before {
+  left: -3px;
+  top: -4px;
+}
+.roadmap:after {
+  right: -3px;
+  top: -4px;
+}
+
+.roadmapcontainer {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.roadmap-title {
+  padding: 10px 20px;
+  color: white; 
+  background: linear-gradient(
+    to right,
+    #0f0f0f,
+    #515151
+  ); 
+  border-radius: 20px; 
+  border: 1px solid #656565;
+  position: relative; 
+  display: inline-block;
+  font-size: 14px; 
+  font-weight: 600;
+}
+
+.roadmap-description {
+  font-size: 10px;
+  line-height: normal;
+  color: #656565;
+}
+
 .promptcontainer {
   width: 85%;
   min-height: 400px;
@@ -603,6 +671,13 @@
     margin-top: 0rem;
     margin-bottom: 3rem;
   }
+
+  .roadmap{
+    margin-right: 0rem;
+    margin-top: 0rem;
+    margin-bottom: 3rem;
+  }
+
   .homedescription{
     font-size: 1.3rem;
   }
@@ -653,6 +728,10 @@
     font-size: 1.5rem;
   }
   .howitworkscontainer{
+    width: 95%;
+    margin: auto;
+  }
+  .roadmapcontainer{
     width: 95%;
     margin: auto;
   }

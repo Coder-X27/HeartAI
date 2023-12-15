@@ -19,13 +19,11 @@ const Home = () => {
             <Imagination/>
             <Evolution/>
             <Powered/>
-            {/* #KHUSHIIIIIIIIIIIIIIIIIIIIII  */}
             <Keyfeatures/>
             <Howitworks/>
             <Steps/>
             <MiniTrade/>
             <Prompt/>
-            {/* {_________KHUSHI____} */}
             <Roadmap/>
             <Heartai/>
             <Faq/>
